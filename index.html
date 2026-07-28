@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules Overcome</title>
+    <style>
+        /* Modern Reset & Dark Theme Base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0b0c10;
+            color: #e0e6ed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        /* Container Card */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #12141d;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 
+                        0 0 20px rgba(138, 43, 226, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Main Hero Banner */
+        .hero-banner {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.85);
+            transition: transform 0.5s ease;
+        }
+
+        .hero-banner:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Main Title */
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 30px 0;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(157, 78, 221, 0.8),
+                         0 0 20px rgba(157, 78, 221, 0.4);
+        }
+
+        /* Grid for Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            padding: 0 30px 40px 30px;
+        }
+
+        /* Feature Cards */
+        .card {
+            background: #1a1d28;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(138, 43, 226, 0.3);
+            border-color: rgba(157, 78, 221, 0.4);
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #7b2cbf;
+            box-shadow: 0 0 15px rgba(123, 44, 191, 0.5);
+        }
+
+        .card p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #c7d2fe;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Header -->
+        <div class="hero-banner">
+            <img src="https://images2.alphacoders.com/132/thumb-1920-1320391.png" alt="shadow HD wallpaper">
+        </div>
+
+        <h1>The Almighty</h1>
+
+        <!-- Content Grid -->
+        <div class="card-grid">
+            <div class="card">
+                <img src="https://imgs.search.brave.com/xG0bCcBaMV-JNm5kX6GHwloW35rvt7q-sb-ujeu4Yow/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzFlL2Q4/LzU2LzFlZDg1NmM0/MTY3ZDE3ZDM2NjNl/OGMxNGM3NzI3OWY5/LmpwZw" alt="What to do">
+                <p>What to do</p>
+            </div>
+
+            <div class="card">
+                <img src="https://imgs.search.brave.com/jEKJbPZm8_k4ErJkEyuERK6dQJcL9GgOics7N3Rkz_E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cmFmbGVkLmNvbS9h/bmltZS1pY29ucy9p/bWFnZXMvNzYxNDdj/NTc1ZGFkNjkxYmM0/ZDNlNDc2YzAzMjVh/MDMxNWU1MGZjMGEz/MjU5NzUyMzQ0Yjcy/NGMwYWExM2ZlMy5q/cGc" alt="What not to do">
+                <p>What not to do</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
